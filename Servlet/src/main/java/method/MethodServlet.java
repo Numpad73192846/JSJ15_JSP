@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 // @MultipartCongif 
 // -> Content-Type : multipart/form-data인 요청을 처리할 수 있게 해주는 설정
-@MultipartConfig			
+// @MultipartConfig			
 @WebServlet("/method")
 public class MethodServlet extends HttpServlet {
 
@@ -92,7 +92,7 @@ public class MethodServlet extends HttpServlet {
 		String title = (String) map.get("title");
 		String content = (String) map.get("content");
 		System.out.println("no : " + no);
-		System.out.println("title : " + title)
+		System.out.println("title : " + title);
 		System.out.println("content : " + content);
 		
 		// 응답
