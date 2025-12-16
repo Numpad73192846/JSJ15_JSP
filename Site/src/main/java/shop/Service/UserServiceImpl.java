@@ -46,5 +46,11 @@ public class UserServiceImpl implements UserService {
 		// 로그인 성공
 		return selectedUser;
 	}
+
+	@Override
+	public Users selectByUsername(String username) {
+		Users user = userDAO.select(username);
+		return user;
+	}
 	
 }
